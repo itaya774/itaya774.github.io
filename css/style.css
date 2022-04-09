@@ -28,6 +28,21 @@ img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
 
+iframe[src$=".pdf"]{
+    width:100%;
+    height:45vh;
+}
+
+.flex{
+    display: flex;
+	justify-content: space-between;	/*横の中央寄せ*/
+	align-items: center;	/*縦の中央寄せ*/
+}
+.flex>p{
+    width: 49%;
+}
+
+
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {

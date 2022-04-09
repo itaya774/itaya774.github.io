@@ -106,9 +106,43 @@
 <h2 class="title">Links<span>リンク</span></h2>
 
 <section class="box">
-<h2>Deep Q-Network (DQN)</h2>
-<iframe src="../pdfs/dqn.pdf" frameborder="0" style="border: none"></iframe>
-<p></p>
+<h2>Asynchronous Advantage Actor-Critic (A3C)</h2>
+<font size="3">
+<p>
+	学習で用いる経験の生成を並列実行することで高速化し，パラメータの更新を非同期的に行う手法．
+	マルチコアCPUの単一マシン上で学習が可能であり，Atari2600において短時間で高いスコアを達成．
+</p>
+
+<u>Asynchronous</u><br>
+<p>
+	非同期的でマルチエージェントな分散学習のことである．
+	CPUのマルチスレッドを用いて複数の学習環境を用意し，各環境でエージェントが学習を行い経験を積み重ねる．
+	パラメータはスレッド毎で個別に持つパラメータ $\theta_{local}$ と，global networkと共有するパラメータ $\theta_{global}$ を持つ．<br>
+	<br>
+	アルゴリズム<br>
+	　　1. $\theta_{local}$ に $\theta_{global}$ を同期．<br>
+	　　2. $\theta_{local}$ を使い，$\theta_{local}$ の更新量 $d\theta_{local}$ を計算．<br>
+	　　3. $d\theta_{local}$ で $\theta_{global}$ を更新．<br>
+	　　4. 1～3を繰り返す.<br>
+	<br>
+	また，パラメータだけでなく，RMSpropの勾配の2乗の移動平均もglobal networkと共有する．<br>
+	メリットとして，LSTM が使用できる点が挙げられる．
+	過去の経験からランダムサンプリングした経験を用いてパラメータを更新するExperience replayを使わず，各スレッドが現在の経験から学習する．
+	その為，時系列情報を考慮することができる．
+</p>
+
+<u>Advantage</u><br>
+<p>
+	A3CのAdvantageには，2つの意味がある．
+	1つ目は，“価値の更新を1ステップ先ではなく2ステップ以上先まで考慮すること”と，2つ目は，“行動の相対的な価値を用いる”という意味である．
+	まず，はじめに1つ目の意味である“価値の更新を1ステップ先ではなく2ステップ以上先まで考慮すること”について説明する．
+</p>
+
+<u>Actor-Critic</u><br>
+<p>
+</p>
+
+</font>
 </section>
 
 <footer>
