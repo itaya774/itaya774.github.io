@@ -100,7 +100,48 @@
 
 <section id="pagetop">
 <h2 class="title">Research</h2>
-<h3>Coming soon...</h3>
+<div class="box">
+	<h3><b>Visual explanation in MARL (IJCNN2023)</b></h3>
+	<p>
+		Multi-agent reinforcement learning (MARL) can acquire cooperative behavior among agents by training multiple agents in the same environment. 
+		Therefore, it is expected to be applied to complex tasks in real environments, such as traffic signal control in a traffic environment and cooperative behavior of robots. 
+		In this study, using the multi-actor-attention-critic (MAAC) with the actor-critic method as a basis, we introduce an attention head for the actor that calculates the agent's action. 
+		In contrast to the critic in MAAC, which shares the attention head among all the agents, the attention head of the actor in our method is constructed independently for each agent. 
+		This allows the attention head of the actor to calculate actor-attention (indicating which other agents are gazed at by each agent) and to acquire cooperative behavior. 
+		We visualize actor-attention to analyze the basis of agents' decisions for cooperative behavior. 
+		Using single spread, which is a multi-agent environment for cooperative problems, we show that the basis of decisions for cooperative behavior can be easily analyzed. 
+		We also demonstrate that our method efficiently obtains cooperative behavior considering other agents through quantitative evaluation of the cooperative behavior.
+	</p>
+	<img src="images/research/marl.png" width="600px" height="500px" style="display: block; margin: auto;">
+</div>
+<div class="box">
+	<h3><b>Mask attention A3C (IJCNN2021)</b></h3>
+	<p>
+		Deep reinforcement learning (DRL) has great potential for acquiring the optimal action in complex environments such as games and robot control.
+		However, it is difficult to analyze the decision-making of the agent, i.e., the reasons it selects the action acquired by learning. 
+		In this work, we propose Mask-Attention A3C (Mask A3C), which introduces an attention mechanism into Asynchronous Advantage Actor-Critic (A3C), which is an actor-critic-based DRL method, and can analyze the decision-making of an agent in DRL. 
+		A3C consists of a feature extractor that extracts features from an image, a policy branch that outputs the policy, and a value branch that outputs the state value. 
+		In this method, we focus on the policy and value branches and introduce an attention mechanism into them. 
+		The attention mechanism applies a mask processing to the feature maps of each branch using mask-attention that expresses the judgment reason for the policy and state value with a heat map. 
+		We visualized mask-attention maps for games on the Atari 2600 and found we could easily analyze the reasons behind an agent's decision-making in various game tasks. 
+		Furthermore, experimental results showed that the agent could achieve a higher performance by introducing the attention mechanism.
+	</p>
+	<img src="images/research/mask-a3c.png" width="600px" height="500px" style="display: block; margin: auto;">
+</div>
+<div class="box">
+	<h3><b>Auxiliary Selection (IJCAI2019 2nd SURL workshop)</b></h3>
+	<p>
+		Deep reinforcement learning (RL) has a difficulty to train an agent and to achieve higher performance stably because complex problems contain larger state spaces. 
+		Unsupervised reinforcement learning and auxiliary learning (UNREAL) has achieve higher performance in complex environments by introducing auxiliary tasks. 
+		UNREAL supports the training of the main task by introducing auxiliary tasks in addition to main tasks during the training phase. 
+		However, these auxiliary tasks used in UNREAL are not necessarily effective in every problem setting. 
+		Although we need to design auxiliary tasks that are effective for a target tasks, designing them manually takes a considerable amount of time. 
+		In this paper, we propose a novel auxiliary task called "auxiliary selection." 
+		Our auxiliary selection adaptively selects auxiliary tasks in accordance with the task and the environment. 
+		Experimental results show that our method can select auxiliary tasks and can train a network efficiently.
+	</p>
+	<img src="images/research/as.png" width="600px" height="500px" style="display: block; margin: auto;">
+</div>
 </section>
 <!--
 <section class="box">
