@@ -101,7 +101,7 @@
 <section id="pagetop">
 <h2 class="title"><font size="6">研究</font></h2>
 <div class="box">
-	<h3><b>Visual explanation in MARL (IJCNN2023)</b></h3>
+	<h3><b>Visual explanation in MARL <font size="2">[ IJCNN2023 ]</font></b></h3>
 	<p>
 		Multi-agent reinforcement learning (MARL) can acquire cooperative behavior among agents by training multiple agents in the same environment. 
 		Therefore, it is expected to be applied to complex tasks in real environments, such as traffic signal control in a traffic environment and cooperative behavior of robots. 
@@ -112,10 +112,29 @@
 		Using single spread, which is a multi-agent environment for cooperative problems, we show that the basis of decisions for cooperative behavior can be easily analyzed. 
 		We also demonstrate that our method efficiently obtains cooperative behavior considering other agents through quantitative evaluation of the cooperative behavior.
 	</p>
-	<img src="images/research/marl.png" width="600px" height="500px" style="display: block; margin: auto;">
+	<p class="resizeimage">
+		<img src="images/research/marl.png">
+	</p>
 </div>
 <div class="box">
-	<h3><b>Mask attention A3C (IJCNN2021)</b></h3>
+	<h3><b>Solving the Deadlock Problem with DRL <font size="2">[ IV2022 ]</font></b></h3>
+	<p>
+		Autonomous driving system controls a vehicle using path planning. 
+		Path planning for automated vehicles observes a vehicle and the surrounding information and plans a trajectory on the basis of rule-based approach. 
+		However, the rule-based path planning cannot generate an appropriate trajectory for complex scenes, such as two vehicles passes each other at an intersection without traffic lights. 
+		Such complex scene is called deadlock. For avoiding the deadlock, it is very costly to create rules manually. 
+		In this paper, we propose a multi-agent deep reinforcement learning method to generate appropriate trajectories at the deadlock scenes. 
+		The proposed method consists of a single feature extractor and actor-critic branches. Moreover, we introduce a mask-attention mechanism for visual explanation. 
+		By taking a look at the obtained attention maps, we can confirm the obtained agent and the reason of the behavior. 
+		For evaluating our method, we develop a simulator environment of autonomous driving that produces a certain deadlock scene. 
+		The experimental results with the developed environment show that the proposed method can generate trajectories avoiding deadlocks.
+	</p>
+	<p class="resizeimage">
+		<img src="images/research/deadlock.png">
+	</p>
+</div>
+<div class="box">
+	<h3><b>Mask attention A3C <font size="2">[ IJCNN2021 ]</font></b></h3>
 	<p>
 		Deep reinforcement learning (DRL) has great potential for acquiring the optimal action in complex environments such as games and robot control.
 		However, it is difficult to analyze the decision-making of the agent, i.e., the reasons it selects the action acquired by learning. 
@@ -126,10 +145,12 @@
 		We visualized mask-attention maps for games on the Atari 2600 and found we could easily analyze the reasons behind an agent's decision-making in various game tasks. 
 		Furthermore, experimental results showed that the agent could achieve a higher performance by introducing the attention mechanism.
 	</p>
-	<img src="images/research/mask-a3c.png" width="600px" height="500px" style="display: block; margin: auto;">
+	<p class="resizeimage">
+		<img src="images/research/mask-a3c.png">
+	</p>
 </div>
 <div class="box">
-	<h3><b>Auxiliary Selection (IJCAI2019 2nd SURL workshop)</b></h3>
+	<h3><b>Auxiliary Selection <font size="2">[ IJCAI2019 2nd SURL workshop ]</font></b></h3>
 	<p>
 		Deep reinforcement learning (RL) has a difficulty to train an agent and to achieve higher performance stably because complex problems contain larger state spaces. 
 		Unsupervised reinforcement learning and auxiliary learning (UNREAL) has achieve higher performance in complex environments by introducing auxiliary tasks. 
@@ -140,7 +161,9 @@
 		Our auxiliary selection adaptively selects auxiliary tasks in accordance with the task and the environment. 
 		Experimental results show that our method can select auxiliary tasks and can train a network efficiently.
 	</p>
-	<img src="images/research/as.png" width="600px" height="500px" style="display: block; margin: auto;">
+	<p class="resizeimage">
+		<img src="images/research/as.png">
+	</p>
 </div>
 </section>
 <!-- <h3>Coming soon...</h3> -->
