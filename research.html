@@ -1,216 +1,149 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Hidenori Itaya's pages</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Hidenori Itaya's pages">
-<!--<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">-->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/print.css" media="print">
-<script src="js/openclose.js"></script>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<style>
-.menu1 a {background-position: -10px -10px;}
-.menu2 a {background-position: -10px -130px;}
-.menu3 a {background-position: -10px -250px;}
-.menu4 a {background-position: -10px -370px;}
-.menu5 a {background-position: -10px -490px;}
-</style>
-<![endif]-->
-</head>
-
-
-<body class="company">
-
-<div id="container">
-
-<!--PC用（801px以上端末）で表示させるブロック-->
-<header class="pc">
-
-	<!--<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>--->
-
-	<!--PC用（801px以上端末）メニュー-->
-	<nav id="menubar">
-	<ul>
-		<!--<li class="menuimg menu1 current"><a href="index.html"><span>Home</span></a></li>-->
-		<li class="menuimg menu2"><a href="index.html"><span>Profile</span></a></li>
-		<li class="menuimg menu3"><a href="research.html"><span>Research</span></a></li>
-		<!--<li class="menuimg menu4"><a href="works.html"><span>Wroks</span></a></li>-->
-		<!-- <li class="menuimg menu4"><a href="link.html"><span>Links</span></a></li> -->
-		<!--<li class="menuimg menu5"><a href="contact.html"><span>Contact</span></a></li>-->
-	</ul>
-	</nav>
-	<ul class="icon">
-		<!--<li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>-->
-		<li><a href="https://twitter.com/ita03395320"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
-		<li><a href="https://github.com/itaya774"><img src="images/icon_github.png" alt="Github"></a></li>
-		<li><a href="https://speakerdeck.com/hita774"><img src="images/icon_speakerdeck.png" alt="Speaker Deck"></a></li>
-		<!--<li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>-->
-		<!--<li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>-->
-	</ul>
-	<ul class="icon">
-		<li><a href="research.html"><span>日本語</span></a></li>
-		/
-		<li><a href="research_en.html"><span>English</span></a></li>
-	</ul>
-
-</header>
-<!--/.pc-->
-
-<!--小さな端末用（800px以下端末）で表示させるブロック-->
-<header class="sh">
-
-	<!--小さな端末用（800px以下端末）メニュー-->
-	<div id="menubar-s">
-	<nav>
-	<ul>
-		<!--<li class="menuimg menu1 current"><a href="index.html"><span>Home</span></a></li>-->
-		<li class="menuimg menu2"><a href="index.html"><span>Profile</span></a></li>
-		<li class="menuimg menu3"><a href="research.html"><span>Research</span></a></li>
-		<!--<li class="menuimg menu4"><a href="works.html"><span>Wroks</span></a></li>-->
-		<!-- <li class="menuimg menu4"><a href="link.html"><span>Links</span></a></li> -->
-		<!--<li class="menuimg menu5"><a href="contact.html"><span>Contact</span></a></li>-->
-	</ul>
-	</nav>
-	<ul class="icon">
-		<!--<li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>-->
-		<li><a href="https://twitter.com/ita03395320"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
-		<li><a href="https://github.com/itaya774"><img src="images/icon_github.png" alt="Github"></a></li>
-		<li><a href="https://speakerdeck.com/hita774"><img src="images/icon_speakerdeck.png" alt="Speaker Deck"></a></li>
-		<!--<li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>-->
-		<!--<li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>-->
-	</ul>
-	<ul class="icon">
-		<li><a href="research.html"><span>日本語</span></a></li>
-		/
-		<li><a href="research_en.html"><span>English</span></a></li>
-	</ul>
-	
-	</div>
-	<!--/#menubar-s-->
-
-</header>
-<!--/.sh-->
-
-<div id="contents">
-
-<div id="main">
-
-<section id="pagetop">
-<h2 class="title"><font size="6">研究</font></h2>
-<div class="box">
-	<h3><b>Visual explanation in MARL <font size="2">[ IJCNN2023 ]</font></b></h3>
-	<p>
-		Multi-agent reinforcement learning (MARL) can acquire cooperative behavior among agents by training multiple agents in the same environment. 
-		Therefore, it is expected to be applied to complex tasks in real environments, such as traffic signal control in a traffic environment and cooperative behavior of robots. 
-		In this study, using the multi-actor-attention-critic (MAAC) with the actor-critic method as a basis, we introduce an attention head for the actor that calculates the agent's action. 
-		In contrast to the critic in MAAC, which shares the attention head among all the agents, the attention head of the actor in our method is constructed independently for each agent. 
-		This allows the attention head of the actor to calculate actor-attention (indicating which other agents are gazed at by each agent) and to acquire cooperative behavior. 
-		We visualize actor-attention to analyze the basis of agents' decisions for cooperative behavior. 
-		Using single spread, which is a multi-agent environment for cooperative problems, we show that the basis of decisions for cooperative behavior can be easily analyzed. 
-		We also demonstrate that our method efficiently obtains cooperative behavior considering other agents through quantitative evaluation of the cooperative behavior.
-	</p>
-	<p class="resizeimage">
-		<img src="images/research/marl.png">
-	</p>
-</div>
-<div class="box">
-	<h3><b>Solving the Deadlock Problem with DRL <font size="2">[ IV2022 ]</font></b></h3>
-	<p>
-		Autonomous driving system controls a vehicle using path planning. 
-		Path planning for automated vehicles observes a vehicle and the surrounding information and plans a trajectory on the basis of rule-based approach. 
-		However, the rule-based path planning cannot generate an appropriate trajectory for complex scenes, such as two vehicles passes each other at an intersection without traffic lights. 
-		Such complex scene is called deadlock. For avoiding the deadlock, it is very costly to create rules manually. 
-		In this paper, we propose a multi-agent deep reinforcement learning method to generate appropriate trajectories at the deadlock scenes. 
-		The proposed method consists of a single feature extractor and actor-critic branches. Moreover, we introduce a mask-attention mechanism for visual explanation. 
-		By taking a look at the obtained attention maps, we can confirm the obtained agent and the reason of the behavior. 
-		For evaluating our method, we develop a simulator environment of autonomous driving that produces a certain deadlock scene. 
-		The experimental results with the developed environment show that the proposed method can generate trajectories avoiding deadlocks.
-	</p>
-	<p class="resizeimage">
-		<img src="images/research/deadlock.png">
-	</p>
-</div>
-<div class="box">
-	<h3><b>Mask attention A3C <font size="2">[ JSAI2020 ] [ IJCNN2021 ]</font></b></h3>
-	<p>
-		Deep reinforcement learning (DRL) has great potential for acquiring the optimal action in complex environments such as games and robot control.
-		However, it is difficult to analyze the decision-making of the agent, i.e., the reasons it selects the action acquired by learning. 
-		In this work, we propose Mask-Attention A3C (Mask A3C), which introduces an attention mechanism into Asynchronous Advantage Actor-Critic (A3C), which is an actor-critic-based DRL method, and can analyze the decision-making of an agent in DRL. 
-		A3C consists of a feature extractor that extracts features from an image, a policy branch that outputs the policy, and a value branch that outputs the state value. 
-		In this method, we focus on the policy and value branches and introduce an attention mechanism into them. 
-		The attention mechanism applies a mask processing to the feature maps of each branch using mask-attention that expresses the judgment reason for the policy and state value with a heat map. 
-		We visualized mask-attention maps for games on the Atari 2600 and found we could easily analyze the reasons behind an agent's decision-making in various game tasks. 
-		Furthermore, experimental results showed that the agent could achieve a higher performance by introducing the attention mechanism.
-	</p>
-	<p class="resizeimage">
-		<img src="images/research/mask-a3c.png">
-	</p>
-</div>
-<div class="box">
-	<h3><b>Auxiliary Selection <font size="2">[ JSAI2019 ] [ IJCAI2019 2nd SURL workshop ] [ IEVC2024 ]</font></b></h3>
-	<p>
-		Deep reinforcement learning (RL) has a difficulty to train an agent and to achieve higher performance stably because complex problems contain larger state spaces. 
-		Unsupervised reinforcement learning and auxiliary learning (UNREAL) has achieve higher performance in complex environments by introducing auxiliary tasks. 
-		UNREAL supports the training of the main task by introducing auxiliary tasks in addition to main tasks during the training phase. 
-		However, these auxiliary tasks used in UNREAL are not necessarily effective in every problem setting. 
-		Although we need to design auxiliary tasks that are effective for a target tasks, designing them manually takes a considerable amount of time. 
-		In this paper, we propose a novel auxiliary task called "auxiliary selection." 
-		Our auxiliary selection adaptively selects auxiliary tasks in accordance with the task and the environment. 
-		Experimental results show that our method can select auxiliary tasks and can train a network efficiently.
-	</p>
-	<p class="resizeimage">
-		<img src="images/research/as.png">
-	</p>
-</div>
-</section>
-<!-- <h3>Coming soon...</h3> -->
+<!DOCTYPE HTML>
 <!--
-<section class="box">
-<h2>Mask-Attention A3C (Mask A3C)</h2>
-<font size="3">
-	フ
-</font>
-<p></p>
-</section>
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<!--
-<section class="box">
-<h2>Auxiliary Selection</h2>
-<font size="3">
-	フ
-</font>
-</section>
--->
-<footer>
-<small>Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small>
-</footer>
+<html>
+	<head>
+		<title>Hidenori Itaya's pages</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-</div>
-<!--/#main-->
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<!-- <a href="#" class="image avatar"><img src="images2/itaya_face5.png" alt="" /></a> -->
+				<img src="images/itaya_face.png" width="150" hspace="20" vspace="10" alt="" />
+				<h1>
+					<strong>板谷英典 (Hidenori Itaya)</strong>
+				</h1>
+				<p>
+					Mail: <a href="mailto:itaya@mprg.cs.chubu.ac.jp">itaya&#64;mprg.cs.chubu.ac.jp</a>
+				</p>
+				<ul class="actions">
+					<a href="index.html" class="button"><strong>Profile</strong></a>
+				</ul>
+				<ul class="actions">
+					<a href="research.html" class="button"><strong>Research</strong></a>
+				</ul>
+			</div>
+		</header>
 
-</div>
-<!--/#contents-->
+		<!-- Main -->
+			<div id="main">
+				<!-- Two -->
+				<section id="two">
+					<h1>Research</h1>
+					<div class="row">
+						<article class="col-12 col-12-xsmall work-item">
+							<a href="images/research/marl.png" class="image fit thumb">
+								<img src="images/research/marl.png" alt="" />
+							</a>
+							<h3>Visual explanation in MARL [ IJCNN2023 ]</h3>
+							<p>
+								Multi-agent reinforcement learning (MARL) can acquire cooperative behavior among agents by training multiple agents in the same environment. 
+								Therefore, it is expected to be applied to complex tasks in real environments, such as traffic signal control in a traffic environment and cooperative behavior of robots. 
+								In this study, using the multi-actor-attention-critic (MAAC) with the actor-critic method as a basis, we introduce an attention head for the actor that calculates the agent's action. 
+								In contrast to the critic in MAAC, which shares the attention head among all the agents, the attention head of the actor in our method is constructed independently for each agent. 
+								This allows the attention head of the actor to calculate actor-attention (indicating which other agents are gazed at by each agent) and to acquire cooperative behavior. 
+								We visualize actor-attention to analyze the basis of agents' decisions for cooperative behavior. 
+								Using single spread, which is a multi-agent environment for cooperative problems, we show that the basis of decisions for cooperative behavior can be easily analyzed. 
+								We also demonstrate that our method efficiently obtains cooperative behavior considering other agents through quantitative evaluation of the cooperative behavior.
+							</p>
+							<hr width="100%">
+						</article>
 
-</div>
-<!--/#container-->
+						<article class="col-12 col-12-xsmall work-item">
+							<a href="images/research/deadlock.png" class="image fit thumb">
+								<img src="images/research/deadlock.png" alt="" />
+							</a>
+							<h3>Solving the Deadlock Problem with DRL [ IV2022 ]</h3>
+							<p>
+								Autonomous driving system controls a vehicle using path planning. 
+								Path planning for automated vehicles observes a vehicle and the surrounding information and plans a trajectory on the basis of rule-based approach. 
+								However, the rule-based path planning cannot generate an appropriate trajectory for complex scenes, such as two vehicles passes each other at an intersection without traffic lights. 
+								Such complex scene is called deadlock. For avoiding the deadlock, it is very costly to create rules manually. 
+								In this paper, we propose a multi-agent deep reinforcement learning method to generate appropriate trajectories at the deadlock scenes. 
+								The proposed method consists of a single feature extractor and actor-critic branches. Moreover, we introduce a mask-attention mechanism for visual explanation. 
+								By taking a look at the obtained attention maps, we can confirm the obtained agent and the reason of the behavior. 
+								For evaluating our method, we develop a simulator environment of autonomous driving that produces a certain deadlock scene. 
+								The experimental results with the developed environment show that the proposed method can generate trajectories avoiding deadlocks.
+							</p>
+							<hr width="100%">
+						</article>
 
-<!--ページの上部に戻る「↑」ボタン-->
-<p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
+						<article class="col-12 col-12-xsmall work-item">
+							<a href="images/research/mask-a3c.png" class="image fit thumb">
+								<img src="images/research/mask-a3c.png" alt="" />
+							</a>
+							<h3>Mask-attention A3C [ JSAI2020 ] [ IJCNN2021 ]</h3>
+							<p>
+								Deep reinforcement learning (DRL) has great potential for acquiring the optimal action in complex environments such as games and robot control.
+								However, it is difficult to analyze the decision-making of the agent, i.e., the reasons it selects the action acquired by learning. 
+								In this work, we propose Mask-Attention A3C (Mask A3C), which introduces an attention mechanism into Asynchronous Advantage Actor-Critic (A3C), which is an actor-critic-based DRL method, and can analyze the decision-making of an agent in DRL. 
+								A3C consists of a feature extractor that extracts features from an image, a policy branch that outputs the policy, and a value branch that outputs the state value. 
+								In this method, we focus on the policy and value branches and introduce an attention mechanism into them. 
+								The attention mechanism applies a mask processing to the feature maps of each branch using mask-attention that expresses the judgment reason for the policy and state value with a heat map. 
+								We visualized mask-attention maps for games on the Atari 2600 and found we could easily analyze the reasons behind an agent's decision-making in various game tasks. 
+								Furthermore, experimental results showed that the agent could achieve a higher performance by introducing the attention mechanism.
+							</p>
+							<hr width="100%">
+						</article>
+						
+						<article class="col-12 col-12-xsmall work-item">
+							<a href="images/research/as.png" class="image fit thumb">
+								<img src="images/research/as.png" alt="" />
+							</a>
+							<h3>Auxiliary selection [ JSAI2019 ] [ IJCAI2019 2nd SURL workshop ] [ IEVC2024 ]</h3>
+							<p>
+								Deep reinforcement learning (RL) has a difficulty to train an agent and to achieve higher performance stably because complex problems contain larger state spaces. 
+								Unsupervised reinforcement learning and auxiliary learning (UNREAL) has achieve higher performance in complex environments by introducing auxiliary tasks. 
+								UNREAL supports the training of the main task by introducing auxiliary tasks in addition to main tasks during the training phase. 
+								However, these auxiliary tasks used in UNREAL are not necessarily effective in every problem setting. 
+								Although we need to design auxiliary tasks that are effective for a target tasks, designing them manually takes a considerable amount of time. 
+								In this paper, we propose a novel auxiliary task called "Auxiliary selection". 
+								Our auxiliary selection adaptively selects auxiliary tasks in accordance with the task and the environment. 
+								Experimental results show that our method can select auxiliary tasks and can train a network efficiently.
+							</p>
+							<hr width="100%">
+						</article>
+						
+					</div>
+					<ul class="actions">
+						<li><a href="#" class="button">Full Portfolio</a></li>
+					</ul>
+				</section>
+		</div>
 
-<!--メニュー開閉ボタン-->
-<div id="menubar_hdr" class="close"></div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://twitter.com/ita03395320" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/itaya774" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://speakerdeck.com/hita774" class="icon brands fa-speaker-deck"><span class="label">SpeakerDeck</span></a></li>
+						<li><a href="mailto:itaya@mprg.cs.chubu.ac.jp" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul>
+						<a href="index.html">日本語</a> / <a href="index_en.html">English</a>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
-<!--メニューの開閉処理条件設定　800px以下-->
-<script>
-if (OCwindowWidth() <= 800) {
-	open_close("menubar_hdr", "menubar-s");
-}
-</script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-</body>
+	</body>
 </html>
